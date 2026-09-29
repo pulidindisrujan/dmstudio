@@ -1,0 +1,447 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #F3EBDD;
+    color: #173B2A;
+}
+
+
+/* =========================
+   MAIN HEADER
+========================= */
+
+.top-header {
+    height: 70px;
+
+    background: #173B2A;
+    color: #F3EBDD;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+
+    border-bottom: 1px solid #285C43;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.header-title {
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #D9E1D8;
+}
+
+
+/* =========================
+   SEARCH SECTION
+========================= */
+
+.search-section {
+    text-align: center;
+
+    padding: 70px 20px 50px;
+}
+
+
+.search-section h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 40px;
+    font-weight: 600;
+
+    margin-bottom: 12px;
+
+    color: #173B2A;
+}
+
+
+.search-section p {
+    font-size: 15px;
+
+    margin-bottom: 28px;
+
+    color: #4A5A4F;
+}
+
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 14px;
+
+    background: #E8DECC;
+
+    border: 1px solid #D4C8B5;
+    border-radius: 12px;
+}
+
+
+.search-box input {
+    width: 100%;
+
+    padding: 13px 16px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+
+    background: #FFF9EF;
+    color: #173B2A;
+
+    border: 1px solid #C8BFAE;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+
+.search-box input:focus {
+    border-color: #285C43;
+
+    box-shadow:
+        0 0 0 3px rgba(40, 92, 67, 0.12);
+}
+
+
+/* Search button is not needed.
+   Search works automatically while typing. */
+
+#searchButton {
+    display: none;
+}
+
+
+/* =========================
+   SEARCH RESULTS
+========================= */
+
+#searchResults {
+    max-width: 672px;
+
+    margin: 12px auto 0;
+
+    text-align: left;
+}
+
+
+#searchResults div {
+    padding: 13px 16px;
+
+    margin-bottom: 6px;
+
+    background: #FFF9EF;
+
+    border: 1px solid #D4C8B5;
+    border-radius: 8px;
+
+    color: #173B2A;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+#searchResults div:hover {
+    background: #173B2A;
+
+    color: #F3EBDD;
+
+    border-color: #173B2A;
+}
+
+
+/* =========================
+   SUBJECTS
+========================= */
+
+.subjects-section {
+    padding: 25px 40px 60px;
+
+    text-align: center;
+}
+
+
+.subjects-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+
+    margin-bottom: 24px;
+}
+
+
+.subjects-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.subject-card {
+    width: 270px;
+
+    padding: 26px 22px;
+
+    background: #FFF9EF;
+
+    border: 1px solid #D4C8B5;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(23, 59, 42, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.subject-card h3 {
+    font-size: 21px;
+    font-weight: 600;
+
+    margin-bottom: 9px;
+}
+
+
+.subject-card p {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #5B665F;
+}
+
+
+.subject-card:hover {
+    transform: translateY(-4px);
+
+    background: #173B2A;
+
+    color: #F3EBDD;
+
+    box-shadow:
+        0 8px 20px rgba(23, 59, 42, 0.15);
+}
+
+
+.subject-card:hover p {
+    color: #F3EBDD;
+}
+
+
+/* =========================
+   PDF READER HEADER
+========================= */
+
+.reader-header {
+    height: 64px;
+
+    background: #173B2A;
+    color: #F3EBDD;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 28px;
+
+    border-bottom: 1px solid #285C43;
+}
+
+
+.reader-logo {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.reader-title {
+    margin-left: 26px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #D9E1D8;
+}
+
+
+.reader-back {
+    margin-left: auto;
+
+    padding: 7px 14px;
+
+    background: transparent;
+
+    color: #F3EBDD;
+
+    border: 1px solid #6F8878;
+
+    border-radius: 6px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.reader-back:hover {
+    background: #F3EBDD;
+
+    color: #173B2A;
+}
+
+
+/* =========================
+   PDF READER
+========================= */
+
+.pdf-reader {
+    min-height: calc(100vh - 64px);
+
+    padding: 20px;
+
+    background: #E8DECC;
+}
+
+
+.pdf-frame {
+    width: 100%;
+
+    height: calc(100vh - 104px);
+
+    display: block;
+
+    border: 1px solid #C8BFAE;
+
+    border-radius: 8px;
+
+    background: #FFF9EF;
+}
+#pdfList {
+    max-width: 700px;
+
+    margin: 30px auto 0;
+
+    text-align: left;
+}
+
+
+#pdfList div {
+    padding: 14px 18px;
+
+    margin-bottom: 8px;
+
+    background: #FFF9EF;
+
+    border: 1px solid #D4C8B5;
+    border-radius: 8px;
+
+    color: #173B2A;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+#pdfList div:hover {
+    background: #173B2A;
+
+    color: #F3EBDD;
+
+    border-color: #173B2A;
+
+    transform: translateX(3px);
+}
+#pdfList {
+    max-width: 700px;
+
+    margin: 30px auto 0;
+
+    text-align: left;
+}
+
+
+#pdfList div {
+    padding: 14px 18px;
+
+    margin-bottom: 8px;
+
+    background: #FFF9EF;
+
+    border: 1px solid #D4C8B5;
+    border-radius: 8px;
+
+    color: #173B2A;
+
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+#pdfList div:hover {
+    background: #173B2A;
+
+    color: #F3EBDD;
+
+    border-color: #173B2A;
+
+    transform: translateX(3px);
+}

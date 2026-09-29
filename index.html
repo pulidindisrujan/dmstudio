@@ -1,0 +1,103 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Study</title>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head> <body>
+<header class="top-header">
+
+    <div class="logo">
+        ᴅᴍ sᴛᴜᴅɪᴏ
+    </div>
+
+    <div class="header-title">
+        ​🇲​​🇪​​🇩​​🇮​​🇨​​🇦​​🇱​ ​🇱​​🇮​​🇧​​🇷​​🇦​​🇷​​🇾​
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="search-section">
+
+        <h1>Learn. Explore. Master.</h1>
+
+        <p>Your personal space for medical learning.</p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a topic..."
+                autocomplete="off"
+            >
+
+            <button id="searchButton">
+                Search
+            </button>
+
+        </div>
+
+        <div id="searchResults"></div>
+
+    </section>
+
+
+    <section class="subjects-section">
+
+        <h2>Subjects</h2>
+
+        <div class="subjects-container">
+
+            <div class="subject-card" onclick="openSubject('Anatomy')">
+
+                <h3>ᴀɴᴀᴛᴏᴍʏ</h3>
+
+
+                <p>
+                    Explore Anatomy Notes
+                </p>
+
+            </div>
+
+
+            <div class="subject-card" onclick="openSubject('Physiology')">
+
+                <h3>ᴘʜʏsɪᴏʟᴏɢʏ</h3>
+
+
+
+                <p>
+                    Explore Physiology Notes
+                </p>
+
+            </div>
+
+
+            <div class="subject-card" onclick="openSubject('Biochemistry')">
+
+                <h3>ʙɪᴏᴄʜᴇᴍɪsᴛʀʏ</h3>
+
+
+                <p>
+                    Explore Biochemistry Notes
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body> </html>
