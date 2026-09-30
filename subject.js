@@ -527,13 +527,16 @@ pdfLibrary[subject].forEach(function (pdfName) {
        OPEN PDF IN NEW TAB
     */
 
-    pdfItem.addEventListener("click", function () {
+pdfItem.addEventListener("click", function () {
 
-        const pdfUrl = encodeURI(pdfPath);
+    const pdfUrl =
+        "https://github.com/pulidindisrujan/dmstudio/raw/refs/heads/clean-main/" +
+        encodeURI(pdfPath);
 
-        window.open(pdfUrl, "_blank");
+    window.open(pdfUrl, "_blank");
 
-    });
+});
+
 
 
     pdfList.appendChild(pdfItem);
