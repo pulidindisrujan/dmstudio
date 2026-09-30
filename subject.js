@@ -518,10 +518,10 @@ pdfLibrary[subject].forEach(function (pdfName) {
     */
 
     const pdfPath =
-        folder + "/" +
-        fileNumber + "." +
-        cleanTitle +
-        ".pdf";
+        "https://raw.githubusercontent.com/pulidindisrujan/dmstudio/clean-main/" +
+        encodeURIComponent(folder) + "/" +
+        encodeURIComponent(fileNumber + "." + cleanTitle + ".pdf");
+
 
     /*
        OPEN PDF IN NEW TAB
