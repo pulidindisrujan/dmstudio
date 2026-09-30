@@ -530,8 +530,9 @@ pdfLibrary[subject].forEach(function (pdfName) {
 pdfItem.addEventListener("click", function () {
 
     const pdfUrl =
-        "https://github.com/pulidindisrujan/dmstudio/raw/refs/heads/clean-main/" +
+        "https://raw.githubusercontent.com/pulidindisrujan/dmstudio/clean-main/" +
         encodeURI(pdfPath);
+
 
     window.open(pdfUrl, "_blank");
 
